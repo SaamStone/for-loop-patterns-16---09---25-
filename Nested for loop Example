@@ -1,0 +1,163 @@
+Date : 16/09/2025
+
+
+count = 0
+for i in range(1,6):
+    for j in range(5):
+        for n in range(4):
+            count+=1
+            print(count)
+
+OUTPUT : 1-100 numbers
+
+count = 0
+num = 0
+for i in range(5):                 # 5
+    for j in range(5):             # 5
+        count+=1                   # counts only "n" loop iterations  (25)
+        for n in range(1,5):       # 4
+            print(n)
+            num+=1                 # counts all the iterations (100)
+        print("The number of iteration is", count)  
+        print()                    # space after "n" loop 
+
+print(num)          
+
+OUTPUT : 
+    1
+2
+3
+4
+The number of iteration is 1
+
+1
+2
+3
+4
+The number of iteration is 2
+
+1
+2
+3
+4
+The number of iteration is 3
+
+
+
+print Square
+
+num = 5
+for i in range(1,num+1):            # 1 - 5
+    for j in range(1,num+1):        # 1 - 5
+        print("*",end = " ")
+    print()                         # breaks j(0),j(1)..j(5)
+
+OUTPUT : 
+
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+print hollow square
+num = 5
+
+for i in range(num):
+    for j in range(num):
+        if i ==0 or j == 0 or i == num-1 or j == num-1:
+            print("*",end = " ")
+        else :
+            print(" ",end  = " ")
+    print()
+    
+OUTPUT : 
+    
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+    
+
+print only empty spaces in HOLLOW square
+num = 5
+for i in range(num):
+    for j in range(num):
+        if i ==0 or j == 0 or i == num-1 or j == num-1:
+            print(" ",end = " ")
+        else :
+            print("*",end  = " ")
+    print()
+    
+OUTPUT :           
+  * * *   
+  * * *   
+  * * *   
+          
+num = 7
+
+for i in range(num):
+    for j in range(num):
+        if i == 0 or j == num-1 or j == 0 or i%2 == 0:
+            print("*",end = " ")
+        else:
+            print(" ",end = " ")
+    print()
+    
+OUTPUT = 
+
+* * * * * * * 
+*           * 
+* * * * * * * 
+*           * 
+* * * * * * * 
+*           * 
+* * * * * * * 
+
+
+num = 7
+
+for i in range(num):
+    for j in range(num):
+        if i == 0 or j %2 == 0 or j == num-1 or i == num-1:
+            print("*",end = " ")
+        else:
+            print(" ",end = " ")
+    print()
+
+OUTPUT :
+    
+* * * * * * * 
+*   *   *   * 
+*   *   *   * 
+*   *   *   * 
+*   *   *   * 
+*   *   *   * 
+* * * * * * * 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+    
