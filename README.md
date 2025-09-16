@@ -1,3 +1,3 @@
-# for-loop-patterns-16---09---25
+# for-loop-patterns
 
 # different pattens using nested for loop
